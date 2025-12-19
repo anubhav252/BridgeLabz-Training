@@ -10,4 +10,5 @@
 - solved 10 problems in c#.
 #### 🟢 **19 dec 2025 :**
 - learned and used data types
-- used operator in c# such as arithmetic ,logical,relational and etc 
+- used operator in c# such as arithmetic ,logical,relational and etc
+- solved 16 basic problems for practice 
