@@ -13,3 +13,5 @@
 - used operator in c# such as arithmetic ,logical,relational and etc
 - solved 16 problems for practice 
 - solved other 12 problems in c#
+### 🟢 **20 dec 2025 :**
+-learned about all access modifier in c# and implemented them in a code
