@@ -11,4 +11,5 @@
 #### 🟢 **19 dec 2025 :**
 - learned and used data types
 - used operator in c# such as arithmetic ,logical,relational and etc
-- solved 16 basic problems for practice 
+- solved 16 problems for practice 
+- solved other 12 problems in c#
