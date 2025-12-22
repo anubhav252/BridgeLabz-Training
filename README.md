@@ -21,6 +21,6 @@
 - learned about all access modifier in c# and implemented them in a code
 --- 
 ### 🟢 **22 dec 2025 :**
--learned about conditional statement in c#
--breifly studied about control flows in c#
--solved and practiced level-1 problems on conditional and control flows 
+- learned about conditional statement in c#
+- breifly studied about control flows in c#
+- solved and practiced level-1 problems on conditional and control flows 
