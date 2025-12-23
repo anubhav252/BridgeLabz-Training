@@ -34,3 +34,9 @@
 - solved and practiced level-1 problems on conditional and control flows 
 - solved level 2 problems on control flows 
 - solved level 3 problems on control flows
+---
+### 🟢 **23 dec 2025 :**
+- studied about arrays in c#
+- studied and learned multidimensional arrays like 2d array and 3d array
+- solved and practiced 10 level 1 problems on arrays
+- solved 2 leetcode problems  
