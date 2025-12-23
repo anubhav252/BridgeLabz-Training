@@ -19,8 +19,18 @@
 ---
 ### 🟢 **20 dec 2025 :**
 - learned about all access modifier in c# and implemented them in a code
+- deeply studied about :
+- Public access modifier 
+- Private access modifier 
+- Protected access modifier 
+- Internal access modifier 
+- Private Protected access modifier  
+- Protected Internal access modifier 
 --- 
 ### 🟢 **22 dec 2025 :**
 - learned about conditional statement in c#
 - breifly studied about control flows in c#
+- studied about jump statements in c#
 - solved and practiced level-1 problems on conditional and control flows 
+- solved level 2 problems on control flows 
+- solved level 3 problems on control flows
