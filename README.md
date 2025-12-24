@@ -46,4 +46,4 @@
 - learned the difference between static and non static meyhods
 - learned method calls
 - solved arrays level 2 problem 
-- solved 2 leetcode problem
+- solved and practiced some leetcode problem
