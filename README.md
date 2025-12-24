@@ -40,3 +40,10 @@
 - studied and learned multidimensional arrays like 2d array and 3d array
 - solved and practiced 10 level 1 problems on arrays
 - solved 2 leetcode problems  
+---
+### 🟢 **24 dec 2025 :**
+- studied about methods and their types
+- learned the difference between static and non static meyhods
+- learned method calls
+- solved arrays level 2 problem 
+- solved 2 leetcode problem
