@@ -51,3 +51,4 @@
 - solved and practiced csharp methods level 1 problems
 - solved csharp methods level 2 problems
 - solved csharp methods level 3 problems
+- practiced some leetcode problems
