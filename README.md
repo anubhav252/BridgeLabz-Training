@@ -47,3 +47,7 @@
 - learned method calls
 - solved arrays level 2 problem 
 - solved and practiced some leetcode problem
+### 🟢 **25 dec 2025 :**
+- solved and practiced csharp methods level 1 problems
+- solved csharp methods level 2 problems
+- solved csharp methods level 3 problems
