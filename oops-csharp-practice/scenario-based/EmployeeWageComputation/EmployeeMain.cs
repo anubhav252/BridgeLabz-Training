@@ -10,7 +10,7 @@ namespace EmployeeWage
     {
         static void Main(string[] args)
         {
-            EmployeeMenu Menu = new EmployeeMenu();
+            EmployeeMenu Menu = new EmployeeMenu();  ///uc 4 using Switch Case
             Menu.Menu();
         }
     }

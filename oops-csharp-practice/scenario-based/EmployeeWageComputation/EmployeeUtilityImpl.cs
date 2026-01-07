@@ -96,6 +96,32 @@ namespace EmployeeWage
             }
         }
 
+        //UC 5
+        private const int WORKING_DAYS = 20;
+
+        public void CalculateMonthlyWage()
+        {
+            if (employees.Count != 0)
+            {
+                foreach (Employee employee in employees)
+                {
+                    if (employee.EmployeeDailyWage > 0)
+                    {
+                        double monthlyWage = employee.EmployeeDailyWage * WORKING_DAYS;
+                        Console.WriteLine(employee.EmployeeName +"'s Monthly Wage : " + monthlyWage);
+                    }
+                    else
+                    {
+                        Console.WriteLine("Calculate daily wage first for " + employee.EmployeeName);
+                    }
+                }
+            }
+            else
+            {
+                Console.WriteLine("Add employee first!");
+            }
+        }
+
 
     }
 }

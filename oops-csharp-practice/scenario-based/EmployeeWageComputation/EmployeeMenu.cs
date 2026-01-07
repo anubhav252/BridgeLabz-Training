@@ -14,9 +14,9 @@ namespace EmployeeWage
         {
             employeeChoice = new EmployeeUtilityImpl();
             Console.WriteLine("Welcome to the Employee Wage Computation Program" );
-            while (true)
+            while (true) ///// UC 4 Using SwitchCase
             {
-                Console.WriteLine("enter corresponding no. for your task \n1. Add Employee \n2. Attendance \n3. Display employee details \n4. Calculate Employee Wage \n5. Calculate Part Time Employee Wage \n6. Exit");
+                Console.WriteLine("enter corresponding no. for your task \n1. Add Employee \n2. Attendance \n3. Display employee details \n4. Calculate Employee Wage \n5. Calculate Part Time Employee Wage \n6. Calculate Monthly Wage \n7. Exit");
                 int choice = int.Parse(Console.ReadLine());
                 switch (choice)
                 {
@@ -35,8 +35,10 @@ namespace EmployeeWage
                     case 5:                                   //UC 3
                         employeeChoice.CalculatePartTimeWage();
                         break;
-
-                    case 6:
+                    case 6:                                  // UC 5
+                        employeeChoice.CalculateMonthlyWage();
+                        break;
+                    case 7:
                         return;
                     default:
                         Console.WriteLine("invalid");
