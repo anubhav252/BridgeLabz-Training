@@ -19,6 +19,8 @@ namespace EmployeeWage
             employee.EmployeeId = long.Parse(Console.ReadLine());
             Console.WriteLine("Enter Employee name :");
             employee.EmployeeName = Console.ReadLine();
+            Console.WriteLine("Enter Employee Type (FullTime / PartTime): ");
+            employee.EmployeeType = Console.ReadLine();
 
             employees.Add(employee);
             return employee;    
@@ -71,6 +73,29 @@ namespace EmployeeWage
             }
             else { Console.WriteLine("Add employee first!"); }
         }
+
+        //UC 3
+        private double partTimeHour = 8;
+        public void CalculatePartTimeWage()
+        {
+            if (employees.Count != 0)
+            {
+                foreach (Employee employee in employees)
+                {
+                    if (employee.EmployeeType.Equals("PartTime", StringComparison.OrdinalIgnoreCase))
+                    {
+                        employee.EmployeeDailyWage = partTimeHour * wagePerHour;
+                        Console.WriteLine(employee.EmployeeName +
+                            "'s Part Time Daily Wage : " + employee.EmployeeDailyWage);
+                    }
+                }
+            }
+            else
+            {
+                Console.WriteLine("Add employee first!");
+            }
+        }
+
 
     }
 }

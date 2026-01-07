@@ -12,6 +12,8 @@ namespace EmployeeWage
         private string employeeName;
         private double employeeSalary;
         private double employeeDailyWage;// UC 2
+        private string employeeType; // UC 3
+
         public long EmployeeId
         {
             get
@@ -46,6 +48,11 @@ namespace EmployeeWage
             }
         }
 
+        public string EmployeeType
+        {
+            get { return employeeType; }
+            set { employeeType = value; }
+        }
         public double EmployeeDailyWage // UC 2
         {
             get { return employeeDailyWage; }
