@@ -11,6 +11,7 @@ namespace EmployeeWage
         private long employeeId;
         private string employeeName;
         private double employeeSalary;
+        private double employeeDailyWage;// UC 2
         public long EmployeeId
         {
             get
@@ -42,6 +43,18 @@ namespace EmployeeWage
             set
             {
                 employeeSalary = value;
+            }
+        }
+
+        public double EmployeeDailyWage // UC 2
+        {
+            get { return employeeDailyWage; }
+            set
+            {
+                if (value > 0)
+                {
+                    employeeDailyWage = value;
+                }
             }
         }
         public override string ToString()

@@ -23,7 +23,7 @@ namespace EmployeeWage
             employees.Add(employee);
             return employee;    
         }
-
+        // UC 1
         public void EmployeeAttendance()
         {
             if (employees.Count != 0)
@@ -49,10 +49,28 @@ namespace EmployeeWage
 
         public void DisplayDetails()
         {
-            foreach(Employee emp in employees)
+            foreach(Employee employee in employees)
             {
-                Console.WriteLine("Employee Id : " + emp.EmployeeId + "\nEmployee Name : " + emp.EmployeeName + "\nEmployee Salary : " + emp.EmployeeSalary );
+                Console.WriteLine("Employee Id : " + employee.EmployeeId + "\nEmployee Name : " + employee.EmployeeName + "\nEmployee Salary : " + employee.EmployeeSalary );
             }   
         }
+
+        // UC 2 
+
+        private double wagePerHour = 20;
+
+        public void CalculateWage()
+        {
+            if (employees.Count != 0)
+            {
+                foreach (Employee employee in employees)
+                {
+                    employee.EmployeeDailyWage = wagePerHour * 8;
+                    Console.WriteLine(employee.EmployeeName +"'s daily Wage :"+ employee.EmployeeDailyWage);
+                }
+            }
+            else { Console.WriteLine("Add employee first!"); }
+        }
+
     }
 }

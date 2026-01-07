@@ -9,8 +9,10 @@ namespace EmployeeWage
     internal interface IEmployee
     {
         Employee AddEmployee();
-        void EmployeeAttendance();
+        void EmployeeAttendance();// UC 1
 
-        void DisplayDetails();
+        void DisplayDetails();// UC 1
+
+        void CalculateWage(); //UC 2
     }
 }
