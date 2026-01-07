@@ -75,7 +75,7 @@ namespace EmployeeWage
         }
 
         //UC 3
-        private double partTimeHour = 8;
+        private double partTimeHour = 4;
         public void CalculatePartTimeWage()
         {
             if (employees.Count != 0)
@@ -114,6 +114,50 @@ namespace EmployeeWage
                     {
                         Console.WriteLine("Calculate daily wage first for " + employee.EmployeeName);
                     }
+                }
+            }
+            else
+            {
+                Console.WriteLine("Add employee first!");
+            }
+        }
+
+        //UC 6
+
+        private const int maxWorkingDays = 20;  
+        private const int maxWorkingHours = 100;
+        private const double fullDayHours = 8;
+
+        public void CalculateWageTillCondition()
+        {
+            if (employees.Count != 0)
+            {
+                foreach (Employee employee in employees)
+                {
+                    int totalWorkingDays = 0;
+                    double totalWorkingHours = 0;
+                    double totalWage = 0;
+
+                    while (totalWorkingDays <= maxWorkingDays && totalWorkingHours <= maxWorkingHours)
+                    {
+                        totalWorkingDays++;
+
+                        
+                        int empType = forAttendance.Next(0, 2);
+
+                        double workingHours = (empType == 1)? fullDayHours: partTimeHour;
+
+                        
+                        if (totalWorkingHours + workingHours > maxWorkingHours)
+                        {
+                            workingHours = maxWorkingHours - totalWorkingHours;
+                        }
+
+                        totalWorkingHours += workingHours;
+                        totalWage += workingHours * wagePerHour;
+                    }
+
+                    Console.WriteLine(employee.EmployeeName +" | Total Days: " + totalWorkingDays +" | Total Hours: " + totalWorkingHours +" | Total Wage: " + totalWage);
                 }
             }
             else

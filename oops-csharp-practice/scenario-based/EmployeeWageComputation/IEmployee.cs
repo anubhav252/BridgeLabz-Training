@@ -18,6 +18,9 @@ namespace EmployeeWage
 
         void CalculateMonthlyWage();   // UC 5
 
+        void CalculateWageTillCondition();   // UC 6
+
+
 
     }
 }
