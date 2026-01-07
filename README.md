@@ -6,3 +6,5 @@
 - studied about encapsulation ,polymorphism,abstraction
 - solved scenario based problem on hotel management and car rental system
 - solved leetcode problem
+#### 🟢 **07 jan 2026 :**
+-- scenario based problem employee wage computation
