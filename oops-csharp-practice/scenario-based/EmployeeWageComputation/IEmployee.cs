@@ -13,6 +13,6 @@ namespace EmployeeWage
 
         void DisplayDetails();// UC 1
 
-        
+        void CalculateWage(); //UC 2
     }
 }
