@@ -11,7 +11,7 @@ namespace AddressBookSystem
         static void Main(string[] args)
         {
             AddressBookMenu menu = new AddressBookMenu();
-            menu.ShowMenu();
+            menu.AddressBookOperationMenu();
         }
     }
 }

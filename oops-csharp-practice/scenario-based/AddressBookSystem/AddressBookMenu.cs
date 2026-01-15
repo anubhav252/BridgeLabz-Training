@@ -8,13 +8,50 @@ namespace AddressBookSystem
 {
     internal class AddressBookMenu
     {
-        private IAddressBook addressBook;
+        private IAddressBook currentBook;
+        private AddressBookManager manager;
 
         public AddressBookMenu()
         {
-            addressBook = new AddressBookUtilityImpl(100);
+            //addressBook = new AddressBookUtilityImpl(100);
+            manager = new AddressBookManager(10);
         }
+        public void AddressBookOperationMenu()
+        {
+            while (true)
+            {
+                Console.WriteLine("1. Add Address Book");
+                Console.WriteLine("2. Select Address Book");
+                Console.WriteLine("3. Show All Address Books");
+                Console.WriteLine("4. Exit");
+                Console.Write("Enter choice: ");
 
+                int choice = int.Parse(Console.ReadLine());
+
+                switch (choice)
+                {
+                    case 1:
+                        manager.AddAddressBook();
+                        break;
+                    case 2:
+                        currentBook = manager.SelectAddressBook();
+                        if (currentBook != null)
+                        {
+                            ShowMenu();
+                        }
+                        break;
+                    case 3:
+                        manager.DisplayAllAddressBooks();
+                        break;
+                    case 4:
+                        return;
+                    default:
+                        Console.WriteLine("Invalid choice.\n");
+                        break;
+                }
+            }
+
+        }
         public void ShowMenu()
         {
             while (true)
@@ -24,7 +61,7 @@ namespace AddressBookSystem
                 Console.WriteLine("3. Edit Contact");
                 Console.WriteLine("4. Delete Contact");
                 Console.WriteLine("5. Add Multiple Contact");
-                Console.WriteLine("6. Exit");
+                Console.WriteLine("6. Back");
                 Console.Write("Enter choice: ");
                 Console.WriteLine("---------------------------------");
 
@@ -33,19 +70,19 @@ namespace AddressBookSystem
                 switch (choice)
                 {
                     case 1:
-                        addressBook.AddContact();
+                        currentBook.AddContact();
                         break;
                     case 2:
-                        addressBook.DisplayContacts();
+                        currentBook.DisplayContacts();
                         break;
                     case 3:
-                        addressBook.EditContact();
+                        currentBook.EditContact();
                         break;
                     case 4:
-                        addressBook.DeleteContact();
+                        currentBook.DeleteContact();
                         break;
                     case 5:
-                        addressBook.AddMultipleContact();
+                        currentBook.AddMultipleContact();
                         break;
                     case 6:
                         return;
