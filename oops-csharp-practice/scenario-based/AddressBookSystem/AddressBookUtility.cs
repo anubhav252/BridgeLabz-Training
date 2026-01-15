@@ -17,6 +17,7 @@ namespace AddressBookSystem
             count = 0;
         }
 
+        // Ability to add new  contact in address book 
         public void AddContact()
         {
             if (count >= contacts.Length)
@@ -57,7 +58,7 @@ namespace AddressBookSystem
 
             Console.WriteLine("\nContact added successfully.\n");
         }
-
+        // to display contacts in address book
         public void DisplayContacts()
         {
             if (count == 0)
