@@ -23,8 +23,10 @@ namespace AddressBookSystem
                 Console.WriteLine("2. Display Contacts");
                 Console.WriteLine("3. Edit Contact");
                 Console.WriteLine("4. Delete Contact");
-                Console.WriteLine("5. Exit");
+                Console.WriteLine("5. Add Multiple Contact");
+                Console.WriteLine("6. Exit");
                 Console.Write("Enter choice: ");
+                Console.WriteLine("---------------------------------");
 
                 int choice = int.Parse(Console.ReadLine());
 
@@ -43,6 +45,9 @@ namespace AddressBookSystem
                         addressBook.DeleteContact();
                         break;
                     case 5:
+                        addressBook.AddMultipleContact();
+                        break;
+                    case 6:
                         return;
                     default:
                         Console.WriteLine("Invalid choice! Enter again--");

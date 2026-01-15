@@ -149,5 +149,16 @@ namespace AddressBookSystem
             }
         Console.WriteLine("Contact not found.\n");
         }
+
+        // method to add multiple contacts one by one
+        public void AddMultipleContact()
+        {
+            Console.WriteLine("Enter no. of contacts");
+            int numberOfContact=int.Parse(Console.ReadLine());
+            for(int i = 1; i <= numberOfContact; i++)
+            {
+                AddContact();
+            }
+        }
     }
 }
