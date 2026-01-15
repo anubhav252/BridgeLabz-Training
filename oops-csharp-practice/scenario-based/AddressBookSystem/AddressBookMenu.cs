@@ -26,7 +26,8 @@ namespace AddressBookSystem
                 Console.WriteLine("2. Select Address Book");
                 Console.WriteLine("3. Show All Address Books");
                 Console.WriteLine("4. Search Person by City or State");
-                Console.WriteLine("5. Exit");
+                Console.WriteLine("5. View Persons by City or State");
+                Console.WriteLine("6. Exit");
                 Console.Write("Enter choice: ");
 
                 int choice = int.Parse(Console.ReadLine());
