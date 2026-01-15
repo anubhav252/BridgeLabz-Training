@@ -184,5 +184,40 @@ namespace AddressBookSystem
             return contacts[index];
         }
 
+        //method for sorting contacts by the name
+        public void SortContacts()
+        {
+            if (count < 2)
+            {
+                Console.WriteLine("Not enough contacts to sort.\n");
+                return;
+            }
+
+            for (int i = 0; i < count - 1; i++)
+            {
+                for (int j = 0; j < count - i - 1; j++)
+                {
+                    string name1 = contacts[j]._FirstName + contacts[j]._LastName;
+                    string name2 = contacts[j + 1]._FirstName + contacts[j + 1]._LastName;
+
+                    if (string.Compare(name1, name2, StringComparison.OrdinalIgnoreCase) > 0)
+                    {
+                        AddressBook temp = contacts[j];
+                        contacts[j] = contacts[j + 1];
+                        contacts[j + 1] = temp;
+                    }
+                }
+            }
+
+            Console.WriteLine("\nContacts sorted alphabetically by name:\n");
+
+            for (int i = 0; i < count; i++)
+            {
+                Console.WriteLine(contacts[i]);
+                Console.WriteLine("------------------------");
+            }
+        }
+
+
     }
 }

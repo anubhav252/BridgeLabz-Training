@@ -75,7 +75,8 @@ namespace AddressBookSystem
                 Console.WriteLine("3. Edit Contact");
                 Console.WriteLine("4. Delete Contact");
                 Console.WriteLine("5. Add Multiple Contact");
-                Console.WriteLine("6. Back");
+                Console.WriteLine("6. Sort Contacts by Name");
+                Console.WriteLine("7. Back");
                 Console.Write("Enter choice: ");
                 Console.WriteLine("---------------------------------");
 
@@ -99,6 +100,9 @@ namespace AddressBookSystem
                         currentBook.AddMultipleContact();
                         break;
                     case 6:
+                        currentBook.SortContacts();
+                        break;
+                    case 7:
                         return;
                     default:
                         Console.WriteLine("Invalid choice! Enter again--");
