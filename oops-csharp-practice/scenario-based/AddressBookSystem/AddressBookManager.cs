@@ -79,5 +79,45 @@ namespace AddressBookSystem
             }
             Console.WriteLine();
         }
+
+        //method for searching person by city or state across all address books
+        public void SearchPerson()
+        {
+
+            if (count == 0)
+            {
+                Console.WriteLine("No Address Books available! Add Address Books\n");
+                return;
+            }
+            Console.Write("Enter City or State to search: ");
+            string searchInput = Console.ReadLine();
+
+            bool found = false;
+
+            for (int i = 0; i < count; i++)
+            {
+                AddressBookUtilityImpl book = addressBooks[i];
+
+                for (int j = 0; j < book.GetContactCount(); j++)
+                {
+                    AddressBook person = book.GetContactAt(j);
+
+                    if (person._City.Equals(searchInput, StringComparison.OrdinalIgnoreCase) ||
+                        person._State.Equals(searchInput, StringComparison.OrdinalIgnoreCase))
+                    {
+                        Console.WriteLine("Address Book: " + addressBookNames[i]);
+                        Console.WriteLine(person);
+                        Console.WriteLine("------------------------");
+                        found = true;
+                    }
+                }
+            }
+
+            if (!found)
+            {
+                Console.WriteLine("No persons found in given city or state.\n");
+            }
+        }
+
     }
 }

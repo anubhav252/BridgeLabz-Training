@@ -168,5 +168,21 @@ namespace AddressBookSystem
                 AddContact();
             }
         }
+
+        public int GetContactCount()
+        {
+            return count;
+        }
+
+        // returns contacts details at given index
+        public AddressBook GetContactAt(int index)
+        {
+            if (index < 0 || index >= count)
+            {
+                return null;
+            }
+            return contacts[index];
+        }
+
     }
 }
