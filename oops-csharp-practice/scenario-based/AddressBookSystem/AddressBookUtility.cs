@@ -73,7 +73,7 @@ namespace AddressBookSystem
                 Console.WriteLine("--------------------------");
             }
         }
-
+        // method for editing contact using firstname and lastname
         public void EditContact()
         {
             if (count == 0)
@@ -115,6 +115,39 @@ namespace AddressBookSystem
             }
 
             Console.WriteLine("Contact not found.\n");
+        }
+
+        // method to delete contact using name
+        public void DeleteContact()
+        {
+            if (count == 0)
+            {
+                Console.WriteLine("no contacts! add contacts first");
+                return;
+            }
+            Console.Write("Enter first name : ");
+            string firstName = Console.ReadLine();
+            Console.Write("Enter last name : ");
+            string lastName = Console.ReadLine();
+            for (int i = 0; i < count; i++)
+            {
+
+                if (contacts[i]._FirstName.Equals(firstName, StringComparison.OrdinalIgnoreCase) &&
+                    contacts[i]._LastName.Equals(lastName, StringComparison.OrdinalIgnoreCase))
+                {
+                    for (int j = i; j < count - 1; j++)
+                    {
+                        contacts[j] = contacts[j + 1];
+                    }
+
+                    contacts[count - 1] = null;
+                    count--;
+
+                    Console.WriteLine("Contact deleted successfully.\n");
+                    return;
+                }
+            }
+        Console.WriteLine("Contact not found.\n");
         }
     }
 }
