@@ -31,7 +31,15 @@ namespace AddressBookSystem
 
             Console.Write("Last Name: ");
             string lastName = Console.ReadLine();
-
+            //to check duplicate entries
+            for (int i = 0; i < count; i++)
+            {
+                if (contacts[i]._FirstName.Equals(firstName, StringComparison.OrdinalIgnoreCase) && contacts[i]._LastName.Equals(lastName, StringComparison.OrdinalIgnoreCase))
+                {
+                    Console.WriteLine("Duplicate entry found! Contact not added.\n");
+                    return;
+                }
+            }
             Console.Write("Address: ");
             string address = Console.ReadLine();
 

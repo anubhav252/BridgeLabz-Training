@@ -16,6 +16,8 @@ namespace AddressBookSystem
             //addressBook = new AddressBookUtilityImpl(100);
             manager = new AddressBookManager(10);
         }
+
+        //menu for addres book operations
         public void AddressBookOperationMenu()
         {
             while (true)
