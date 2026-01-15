@@ -10,6 +10,7 @@ namespace AddressBookSystem
     {
         void AddContact();
         void DisplayContacts();
+        void EditContact();// for Editing contacts
 
     }
 }

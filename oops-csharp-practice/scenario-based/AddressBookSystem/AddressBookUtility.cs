@@ -73,5 +73,48 @@ namespace AddressBookSystem
                 Console.WriteLine("--------------------------");
             }
         }
+
+        public void EditContact()
+        {
+            if (count == 0)
+            {
+                Console.WriteLine("No contacts available! Add Contacts First");
+                return;
+            }
+            Console.Write("Enter first name : ");
+            string firstName = Console.ReadLine();
+            Console.Write("Enter last name : ");
+            string lastName = Console.ReadLine();
+            for (int i = 0; i < count; i++)
+            {
+                if (contacts[i]._FirstName.Equals(firstName, StringComparison.OrdinalIgnoreCase) &&
+                    contacts[i]._LastName.Equals(lastName, StringComparison.OrdinalIgnoreCase))
+                {
+                    Console.WriteLine("Enter new details");
+
+                    Console.Write("Address: ");
+                    contacts[i]._Address = Console.ReadLine();
+
+                    Console.Write("City: ");
+                    contacts[i]._City = Console.ReadLine();
+
+                    Console.Write("State: ");
+                    contacts[i]._State = Console.ReadLine();
+
+                    Console.Write("Zip: ");
+                    contacts[i]._Zip = Console.ReadLine();
+
+                    Console.Write("Phone Number: ");
+                    contacts[i]._PhoneNumber = Console.ReadLine();
+
+                    Console.Write("Email: ");
+                    contacts[i]._Email = Console.ReadLine();
+                    Console.WriteLine("Contact updated successfully.\n");
+                    return;
+                }
+            }
+
+            Console.WriteLine("Contact not found.\n");
+        }
     }
 }
