@@ -171,12 +171,7 @@ namespace AddressBookSystem
             }
         }
 
-        private void AddToGroup(
-    string key,
-    AddressBook person,
-    string[] keys,
-    AddressBook[][] values,
-    ref int keyCount)
+         private void AddToGroup(string key,AddressBook person,string[] keys,AddressBook[][] values,ref int keyCount)
         {
             for (int i = 0; i < keyCount; i++)
             {
@@ -225,6 +220,74 @@ namespace AddressBookSystem
                 }
             }
         }
+
+        //method for counting person
+        public void CountPersons()
+        {
+            string[] cityNames = new string[50];
+            int[] cityCounts = new int[50];
+            int citySize = 0;
+
+            string[] stateNames = new string[50];
+            int[] stateCounts = new int[50];
+            int stateSize = 0;
+
+            for (int i = 0; i < count; i++)
+            {
+                AddressBookUtilityImpl book = addressBooks[i];
+
+                for (int j = 0; j < book.GetContactCount(); j++)
+                {
+                    AddressBook person = book.GetContactAt(j);
+
+                    citySize = UpdateCount(person._City,cityNames,cityCounts,citySize);
+
+                    stateSize = UpdateCount(person._State,stateNames,stateCounts,stateSize);
+                }
+            }
+
+            Console.WriteLine("\nCount By:");
+            Console.WriteLine("1. City");
+            Console.WriteLine("2. State");
+            Console.Write("Enter choice: ");
+            int choice = int.Parse(Console.ReadLine());
+
+            if (choice == 1)
+            {
+                DisplayCount(cityNames, cityCounts, citySize, "City");
+            }
+            else if (choice == 2)
+            {
+                DisplayCount(stateNames, stateCounts, stateSize, "State");
+            }
+        }
+
+        private int UpdateCount(string key,string[] keys, int[] counts, int size)
+        {
+            for (int i = 0; i < size; i++)
+            {
+                if (keys[i].Equals(key, StringComparison.OrdinalIgnoreCase))
+                {
+                    counts[i]++;
+                    return size;
+                }
+            }
+
+            keys[size] = key;
+            counts[size] = 1;
+            return size + 1;
+        }
+        private void DisplayCount(string[] keys,int[] counts,int size,string label)
+        {
+            Console.WriteLine($"\nCount By {label}:");
+            Console.WriteLine("-------------------");
+
+            for (int i = 0; i < size; i++)
+            {
+                Console.WriteLine($"{keys[i]} : {counts[i]}");
+            }
+        }
+
 
     }
 }

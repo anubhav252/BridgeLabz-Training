@@ -27,7 +27,8 @@ namespace AddressBookSystem
                 Console.WriteLine("3. Show All Address Books");
                 Console.WriteLine("4. Search Person by City or State");
                 Console.WriteLine("5. View Persons by City or State");
-                Console.WriteLine("6. Exit");
+                Console.WriteLine("6. Count Persons by City or State");
+                Console.WriteLine("7. Exit");
                 Console.Write("Enter choice: ");
 
                 int choice = int.Parse(Console.ReadLine());
@@ -51,6 +52,12 @@ namespace AddressBookSystem
                         manager.SearchPerson();
                         break;
                     case 5:
+                        manager.ViewPersons();
+                        break;
+                    case 6:
+                        manager.CountPersons();
+                        break;
+                    case 7:
                         return;
                     default:
                         Console.WriteLine("Invalid choice.\n");
