@@ -22,12 +22,12 @@ namespace PasswordCracker
             }
             if (index == targetLength)
             {
-                System.Console.WriteLine(currentPassword.ToString()+" , ");
                 if(currentPassword.ToString() == target)
                 {
                     System.Console.WriteLine("Password found: " + currentPassword.ToString());
                     found = true;
                 }
+                System.Console.WriteLine(currentPassword.ToString()+" , ");
                 return;
             }
             
@@ -35,7 +35,7 @@ namespace PasswordCracker
             {
                 currentPassword.Append(character[i]);
                 GeneratePassword(index + 1, targetLength, currentPassword);
-                currentPassword.Remove(currentPassword.Length - 1, 1);
+                currentPassword.Remove(currentPassword.Length - 1,1);
             }
             
         }
