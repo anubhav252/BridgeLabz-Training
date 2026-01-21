@@ -1,7 +1,8 @@
 <p align="center">
   <img src="https://img.shields.io/badge/Status-Active-brightgreen?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Focus-Learning-blue?style=for-the-badge" />
+  <img src="https://img.shields.io/Focus-Full%20Stack%20Learning-bluestyle=for-the-badge" />
   <img src="https://img.shields.io/badge/Primary-C%23-purple?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Platform-.NET-512BD4?style=for-the-badge" />
 </p>
 
 # ⭐ BridgeLabz Training
@@ -26,286 +27,327 @@ BridgeLabz-Training/
 │
 ├── core-csharp-practice/
 │   ├── gcr-codebase/
-│   │   ├── csharp-arrays/
-│   │   │   ├── level01/
-│   │   │   └── level02/
-│   │   │
-│   │   ├── csharp-control-flows/
-│   │   │   ├── level01/
-│   │   │   ├── level02/
-│   │   │   └── level03/
-│   │   │
-│   │   ├── csharp-methods/
-│   │   │   ├── level01/
-│   │   │   ├── level02/
-│   │   │   └── level03/
-│   │   │
-│   │   ├── csharp-programming-elements/
-│   │   │   ├── level01/
-│   │   │   └── level02/
-│   │   │
-│   │   ├── csharp-strings/
-│   │   │   ├── level01/
-│   │   │   └── level02/
-│   │   │
-│   │   └── extra-csharp-strings/
-│   │       ├── level01/
-│   │       └── level02/
-│   │
-│   ├── programming-elements/
+│   ├── leet-code-codebase/
+│   └── scenario-based/
+│
+├── oops-csharp-practice/
+│   ├── gcr-codebase/
 │   ├── leet-code-codebase/
 │   └── scenario-based/
 │
 ├── dsa-csharp-practice/
 │   ├── gcr-codebase/
-│   │   ├── csharp-builders-and-searching/
-│   │   ├── csharp-linked-list/
-│   │   ├── csharp-sorting-algorithms/
-│   │   └── csharp-stack-queue-hashmap/
-│   │
 │   ├── scenario-based/
-│   └── README.md
+│   └── leet-code-codebase/
 │
-├── oops-csharp-practice/
+├── collections-csharp-practice/
 │   ├── gcr-codebase/
-│   │   ├── csharp-class-objects/
-│   │   ├── csharp-constructors/
-│   │   ├── csharp-encapsulation/
-│   │   ├── csharp-inheritance/
-│   │   ├── csharp-object-oriented-design/
-│   │   └── csharp-this-sealed-static-keywords/
-│   │
 │   ├── leet-code-codebase/
-│   ├── scenario-based/
-│   └── README.md
-│
+│   └── scenario-based/
+│  
 └── README.md
 
 ---
 
 ## 📆 16th December 2025
-- 🛠️ Completed Git setup and created a GitHub repository  
-- 📘 Practiced essential Git commands  
-- 🔄 Understood version control workflows  
+- 🛠️ Installed and configured Git and GitHub  
+- 🔐 Set up SSH keys for secure authentication  
+- 📁 Created initial repository structure  
+- 📘 Learned Git commands:
+  - `git init`, `git clone`
+  - `git status`, `git add`, `git commit`
+  - `git push`, `git pull`
+- 🔄 Understood:
+  - Local vs remote repositories  
+  - Staging area and commit lifecycle  
+- 🧠 Learned importance of version control in real-world projects  
 
 ---
 
 ## 📆 17th December 2025
-- 🧠 Solved 10 Google Classroom codebase questions using Java  
-- 📌 Practiced core Java syntax and logical problem-solving  
-- ✨ Improved confidence in writing clean and structured Java programs  
+- 🧠 Solved **10 Google Classroom problems using Java**
+- ✍️ Practiced:
+  - Variables and data types  
+  - Input/output handling  
+  - Conditional statements  
+  - Loop structures  
+- 📌 Improved logical problem-solving skills  
+- ✨ Focused on writing clean and readable Java programs  
 
 ---
 
 ## 📆 18th December 2025
-- 📘 Learned C# fundamentals (syntax and program structure)  
-- 🏗️ Studied .NET basic architecture and core components  
+- 📘 Learned C# fundamentals:
+  - Program structure  
+  - `Main()` method  
+  - Namespaces  
+  - Console input/output  
+- 🏗️ Studied .NET architecture:
+  - CLR (Common Language Runtime)  
+  - CTS (Common Type System)  
+  - CLS (Common Language Specification)  
 - 🧠 Solved 10 Google Classroom questions in C#  
 - 🧩 Solved 2 LeetCode problems using C#  
+- 🔁 Compared Java and C# syntax differences  
 
 ---
 
 ## 📆 19th December 2025
-- ➕ Learned Operators in C#:
-  - Arithmetic  
-  - Relational  
-  - Logical  
-  - Assignment  
-- 📦 Learned Data Types in C#:
-  - Value Types  
-  - Reference Types  
-- 🧠 Solved 26 Google Classroom questions  
+- ➕ Learned C# Operators:
+  - Arithmetic operators  
+  - Relational operators  
+  - Logical operators  
+  - Assignment operators  
+- 📦 Learned data types:
+  - Value types  
+  - Reference types  
+- 🧠 Solved 26 logic-based coding problems  
+- 📌 Practiced type casting and operator precedence  
 
 ---
 
 ## 📆 20th December 2025
-- 🔐 Learned and practiced Access Modifiers in C#:
-  - public  
-  - private  
-  - protected  
-  - internal  
-  - protected internal  
-  - private protected  
+- 🔐 Learned Access Modifiers:
+  - `public`
+  - `private`
+  - `protected`
+  - `internal`
+  - `protected internal`
+  - `private protected`
+- 🧠 Understood scope, accessibility, and encapsulation boundaries  
+- 🧩 Implemented example programs for each modifier  
 
 ---
 
 ## 📆 22nd December 2025
-- 🔁 Learned C# Control Flow:
+- 🔁 Learned Control Flow:
   - Boolean expressions  
-  - Logical operators  
-  - if / else-if / else  
-  - Loops: for, while  
-  - break, continue, switch  
+  - Conditional statements  
+- 📘 Practiced:
+  - `if`, `else if`, `else`
+  - `switch-case`
+- 🔄 Learned loops:
+  - `for`
+  - `while`
+  - `do-while`
+- 🧠 Used `break` and `continue` effectively  
 
 ---
 
 ## 📆 23rd December 2025
 - 🧮 Learned Arrays in C#:
   - Declaration and initialization  
-  - Accessing and modifying elements  
-- 🧠 Solved multiple array-based problems  
+  - Index-based access  
+- 🔄 Performed:
+  - Traversing arrays  
+  - Element modification  
+- 🧠 Solved array problems:
+  - Sum and average  
+  - Finding minimum and maximum  
+  - Duplicate detection  
 
 ---
 
 ## 📆 24th December 2025
-- 🧠 Learned user-defined methods, recursion, static methods  
-- 📘 Studied .NET Standard Library  
-- 🧩 Solved LeetCode problem: Two Sum  
+- 🧠 Learned methods:
+  - User-defined methods  
+  - Parameters and return types  
+  - Static vs instance methods  
+- 🔁 Learned recursion and call stack behavior  
+- 📘 Explored .NET Standard Library  
+- 🧩 Solved LeetCode problem: **Two Sum**  
 
 ---
 
 ## 📆 25th December 2025
-- 🏆 Solved Methods problems (Level 1, Level 2, and Level 3)  
+- 🏆 Solved methods problems:
+  - Level 1 – Basic logic  
+  - Level 2 – Parameter-based logic  
+  - Level 3 – Modular design  
+- 🧠 Improved code reusability and readability  
 
 ---
 
 ## 📆 26th December 2025
 - 📘 Learned Strings in C#:
   - String immutability  
-  - Common methods:
-    - Length  
-    - ToUpper(), ToLower()  
-    - Substring(), IndexOf()  
-    - Contains(), Split()  
-    - Replace(), Trim()  
-- 🏆 Solved multiple string-based problems  
+  - Memory allocation concepts  
+- 🧰 Practiced:
+  - `Length`
+  - `ToUpper()`, `ToLower()`
+  - `Substring()`
+  - `IndexOf()`
+  - `Contains()`
+  - `Split()`
+  - `Replace()`
+  - `Trim()`
+- 🧠 Solved string manipulation problems  
 
 ---
 
 ## 📆 27th December 2025
-- ⚠️ Studied Exception Handling in C#  
-- 🔢 Learned ASCII codes  
+- ⚠️ Learned Exception Handling:
+  - `try`, `catch`, `finally`
+  - Multiple catch blocks  
+- 🧠 Handled:
+  - Divide-by-zero exception  
+  - Format exception  
+  - Null reference exception  
+- 🔢 Studied ASCII values and character conversion  
 
 ---
 
 ## 📆 28th December 2025
-- 🕒 Learned Date & Time functions  
-- 📘 Practiced common built-in functions  
+- 🕒 Learned Date & Time:
+  - `DateTime`
+  - `TimeSpan`
+- 📘 Performed:
+  - Date formatting  
+  - Difference between dates  
+- 🧠 Built age and duration calculators  
 
 ---
 
 ## 📆 29th December 2025
 - 🎮 Built Snake & Ladder Game  
-- 📝 Implemented Sentence Formatter & Text Analyzer  
-- 🌡️ Created Temperature Analyzer & Student Score Manager  
+- 📝 Developed Sentence Formatter  
+- 🔍 Created Text Analyzer  
+- 🌡️ Implemented Temperature Analyzer  
+- 🎓 Built Student Score Manager  
 
 ---
 
 ## 📆 30th December 2025
 - 🧩 Solved scenario-based problems:
-  - Quiz grading system using arrays  
-  - Library management system using 2D arrays  
-  - String search and filtering operations  
+  - Quiz grading system  
+  - Library management using 2D arrays  
+  - String search and filtering  
   - Score calculation and evaluation  
 
 ---
 
 ## 📆 31st December 2025
-- 🏦 Developed Bank Account Manager  
-- 🧮 Built Mathematical Utility Class  
-- 🧾 Created Invoice Generator for Freelancers  
-- 🧠 Learned constructors, instance vs class variables, access modifiers  
+- 🏦 Built Bank Account Manager  
+- 🧮 Created Mathematical Utility Class  
+- 🧾 Developed Invoice Generator:
+  - Tax calculation  
+  - Discount application  
+- 🧠 Learned constructors and object lifecycle  
 
 ---
 
 ## 📆 1st January 2026
-- ☕ Built Cafeteria Menu App  
-- 🧠 Learned:
-  - this keyword  
-  - sealed keyword  
-  - static keyword  
-  - is keyword  
+- ☕ Built Cafeteria Menu Application  
+- 🧠 Learned keywords:
+  - `this`
+  - `sealed`
+  - `static`
+  - `is`
+- 📘 Understood static memory behavior  
 
 ---
 
 ## 📆 2nd January 2026
 - 🚌 Developed Bus Route Distance Tracker  
 - 🎉 Built Festival Lucky Draw System  
-- 📐 Learned Object Modeling:
-  - Class Diagram  
-  - Object Diagram  
-  - Sequence Diagram  
+- 📐 Learned UML diagrams:
+  - Class diagram  
+  - Object diagram  
+  - Sequence diagram  
 
 ---
 
 ## 📆 3rd January 2026
-- 🧠 Studied:
+- 🧠 Learned:
   - Inheritance  
   - Polymorphism  
-  - Method Overriding  
-  - Constructor Inheritance  
+  - Method overriding  
+  - Constructor chaining  
+- 🧩 Implemented real-world inheritance examples  
 
 ---
 
 ## 📆 4th January 2026
-- 🧬 Implemented Multiple Inheritance structures  
+- 🧬 Implemented multiple inheritance using interfaces  
+- 📘 Understood diamond problem solution in C#  
 
 ---
 
 ## 📆 5th January 2026
 - 🏥 Built Hospital Patient Management System  
 - 🚗 Created Vehicle Rental Application  
-- 🧠 Learned Encapsulation and Polymorphism  
+- 🧠 Learned encapsulation and data hiding  
+- 📌 Applied getters and setters  
 
 ---
 
 ## 📆 6th January 2026
 - 🐦 Developed Bird Sanctuary System  
 - 📞 Built Customer Service Call Log Manager  
-- 🧠 Learned Interfaces and Abstract Classes  
+- 🧠 Learned abstract classes and interfaces  
+- 📘 Compared abstraction approaches  
 
 ---
 
 ## 📆 7th January 2026
 - 👨‍💼 Implemented Employee Wage Computation System  
+- 🧠 Applied polymorphism and interfaces  
 
 ---
 
 ## 📆 8th January 2026
 - 🏠 Built Smart Home Automation System  
-- 🧱 Learned Linked Lists:
-  - Singly Linked List  
-  - Doubly Linked List  
-  - Circular Linked List  
+- 🧱 Learned linked lists:
+  - Singly linked list  
+  - Doubly linked list  
+  - Circular linked list  
+- 🧠 Implemented insert, delete, and traversal  
 
 ---
 
 ## 📆 9th January 2026
-- 🏃 Created FitTrack – Fitness Tracker  
+- 🏃 Built FitTrack – Fitness Tracker  
 - 🏧 Implemented ATM Dispenser Logic  
-- 🧠 Learned Stack, Queue, and HashMap  
+- 🧠 Learned:
+  - Stack  
+  - Queue  
+  - HashMap / Dictionary  
 
 ---
 
 ## 📆 11th January 2026
-- 🔢 Learned and implemented sorting algorithms:
-  - Bubble Sort  
-  - Insertion Sort  
-  - Selection Sort  
-  - Merge Sort  
-  - Quick Sort  
-  - Heap Sort  
-  - Counting Sort  
+- 🔢 Implemented sorting algorithms:
+  - Bubble sort  
+  - Selection sort  
+  - Insertion sort  
+  - Merge sort  
+  - Quick sort  
+  - Heap sort  
+  - Counting sort  
+- 🧠 Compared time and space complexities  
 
 ---
 
 ## 📆 12th January 2026
 - 🏭 Built Metal Factory Pipe Cutting System  
-- 🧵 Learned StringBuilder and StringBuffer  
-- 🔍 Implemented Linear Search and Binary Search  
+- 🧵 Learned `StringBuilder` and `StringBuffer`  
+- 🔍 Implemented linear search and binary search  
 
 ---
 
 ## 📆 13th January 2026
-- 🪑 Built Custom Furniture Manufacturing System  
-- 💳 Implemented LoanBuddy – Loan Approval Automation  
+- 🪑 Built Furniture Manufacturing System  
+- 💳 Developed LoanBuddy – Loan Approval Automation  
 - 🎬 Created CinemaTime – Movie Schedule Manager  
-- 📚 Developed BookBuddy – Digital Bookshelf App  
+- 📚 Built BookBuddy – Digital Bookshelf App  
 
 ---
 
-## 📆 14th January 2026 
-- 🕒 studied about time and space complexity 
-- 🏆 solved problems to analyze and compare code for better performance
- 
+## 📆 14th January 2026
+- 🕒 Studied time complexity:
+  - O(1), O(n), O(log n), O(n²), O(n log n)  
+- 📦 Studied space complexity  
+- 🧠 Compared multiple approaches for optimization  
+- 🏆 Improved program performance through analysis  
+
  ---
