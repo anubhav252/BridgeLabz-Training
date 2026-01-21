@@ -1,6 +1,5 @@
 <p align="center">
   <img src="https://img.shields.io/badge/Status-Active-brightgreen?style=for-the-badge" />
-  <img src="https://img.shields.io/Focus-Full%20Stack%20Learning-bluestyle=for-the-badge" />
   <img src="https://img.shields.io/badge/Primary-C%23-purple?style=for-the-badge" />
   <img src="https://img.shields.io/badge/Platform-.NET-512BD4?style=for-the-badge" />
 </p>
@@ -46,6 +45,7 @@ BridgeLabz-Training/
 │   └── scenario-based/
 │  
 └── README.md
+```
 
 ---
 
