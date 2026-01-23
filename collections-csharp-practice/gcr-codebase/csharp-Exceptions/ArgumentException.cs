@@ -1,5 +1,4 @@
 using System;
-
 class Calculator
 {
     static double CalculateInterest(double amount, double rate, int years)
@@ -19,10 +18,10 @@ class Calculator
             Console.Write("Enter amount: ");
             double amount = double.Parse(Console.ReadLine());
 
-            Console.Write("Enter rate: ");
+            Console.Write("Enter rate : ");
             double rate = double.Parse(Console.ReadLine());
 
-            Console.Write("Enter years: ");
+            Console.Write("Enter years : ");
             int years = int.Parse(Console.ReadLine());
 
             double interest = CalculateInterest(amount, rate, years);

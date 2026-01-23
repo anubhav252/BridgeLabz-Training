@@ -13,11 +13,11 @@ class NestedTryCatchDemo
 
             try
             {
-                Console.Write("Enter divisor: ");
+                Console.Write("Enter divisor : ");
                 int divisor = int.Parse(Console.ReadLine());
 
                 int result = numbers[index] / divisor;
-                Console.WriteLine("Result: " + result);
+                Console.WriteLine("Result : " + result);
             }
             catch (DivideByZeroException)
             {

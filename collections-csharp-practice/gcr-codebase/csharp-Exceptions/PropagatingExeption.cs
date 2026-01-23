@@ -1,5 +1,4 @@
 using System;
-
 class PropagatingException
 {
     static void Method1(int num)
@@ -26,7 +25,7 @@ class PropagatingException
         }
         catch (ArithmeticException)
         {
-            Console.WriteLine("Handled exception in Main");
+            Console.WriteLine("Handled exception in Main!");
         }
     }
 }

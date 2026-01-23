@@ -17,7 +17,7 @@ class FileHandlingException
         }
         catch (IOException)
         {
-            Console.WriteLine("Error reading file");
+            Console.WriteLine("Error : reading file");
         }
     }
 }

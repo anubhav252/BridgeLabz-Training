@@ -21,7 +21,7 @@ class AgeValidation
     {
         try
         {
-            Console.Write("Enter age: ");
+            Console.Write("Enter age : ");
             int age = int.Parse(Console.ReadLine());
 
             ValidateAge(age);

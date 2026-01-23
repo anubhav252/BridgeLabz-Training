@@ -17,7 +17,7 @@ class FileNotFoundException
         }
         catch (IOException)
         {
-            Console.WriteLine("File not found");
+            Console.WriteLine("File not found!");
         }
     }
 }

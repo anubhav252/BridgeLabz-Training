@@ -8,7 +8,7 @@ class HandlingMultipleException
         {
             int[] numbers = { 10, 20, 30, 40, 50 };
 
-            Console.Write("Enter index: ");
+            Console.Write("Enter index : ");
             int index = int.Parse(Console.ReadLine());
 
             Console.WriteLine("Value at index " + index + ": " + numbers[index]);

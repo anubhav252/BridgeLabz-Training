@@ -22,7 +22,7 @@ class FinallyBlockExecution
         }
         finally
         {
-            Console.WriteLine("Operation completed");
+            Console.WriteLine("Operation completed--");
         }
     }
 }

@@ -30,7 +30,7 @@ class BankAccount
     }
 }
 
-class Program
+class ProgramMain
 {
     static void Main()
     {

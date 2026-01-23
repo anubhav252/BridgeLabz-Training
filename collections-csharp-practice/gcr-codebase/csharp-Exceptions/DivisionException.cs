@@ -6,10 +6,10 @@ class DivisionExceptionDemo
     {
         try
         {
-            Console.Write("Enter first number: ");
+            Console.Write("Enter first number : ");
             int num1 = int.Parse(Console.ReadLine());
 
-            Console.Write("Enter second number: ");
+            Console.Write("Enter second number  : ");
             int num2 = int.Parse(Console.ReadLine());
 
             int result = num1 / num2;
@@ -18,7 +18,7 @@ class DivisionExceptionDemo
         }
         catch (DivideByZeroException)
         {
-            Console.WriteLine("Error: Division by zero is not allowed.");
+            Console.WriteLine("Error : Division by zero is not allowed.");
         }
         catch (FormatException)
         {
