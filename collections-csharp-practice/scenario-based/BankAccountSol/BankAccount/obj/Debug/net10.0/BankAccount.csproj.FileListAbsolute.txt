@@ -1,0 +1,11 @@
+D:\BankAccountSol\BankAccount\bin\Debug\net10.0\BankAccount.deps.json
+D:\BankAccountSol\BankAccount\bin\Debug\net10.0\BankAccount.dll
+D:\BankAccountSol\BankAccount\bin\Debug\net10.0\BankAccount.pdb
+D:\BankAccountSol\BankAccount\obj\Debug\net10.0\BankAccount.GeneratedMSBuildEditorConfig.editorconfig
+D:\BankAccountSol\BankAccount\obj\Debug\net10.0\BankAccount.AssemblyInfoInputs.cache
+D:\BankAccountSol\BankAccount\obj\Debug\net10.0\BankAccount.AssemblyInfo.cs
+D:\BankAccountSol\BankAccount\obj\Debug\net10.0\BankAccount.csproj.CoreCompileInputs.cache
+D:\BankAccountSol\BankAccount\obj\Debug\net10.0\BankAccount.dll
+D:\BankAccountSol\BankAccount\obj\Debug\net10.0\refint\BankAccount.dll
+D:\BankAccountSol\BankAccount\obj\Debug\net10.0\BankAccount.pdb
+D:\BankAccountSol\BankAccount\obj\Debug\net10.0\ref\BankAccount.dll
