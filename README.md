@@ -405,3 +405,69 @@ BridgeLabz-Training/
   - Real-World Use Cases and Best Practices
 
 ---
+
+## 📆 22nd January 2025
+
+- 🚑 Completed a scenario-based problem on **AmbulanceRoute – Emergency Patient Navigation**
+- 🔄 Studied and implemented **Circular Linked List**
+
+- **📂 C# I/O Streams**
+- 📚 Overview of different stream types
+- 📄 File stream operations
+- 🧩 Object stream handling
+- 🔢 Byte array–based streams
+- 🧵 Buffered stream usage
+- ✍️ Reader and writer classes
+- ✅ Important best practices
+
+---
+
+## 📆 23rd January 2025
+
+- **⚠️ Exception Handling**
+- ❌ Classification of exceptions
+- ✔️ Compile-time (checked) exceptions
+- ❗ Runtime (unchecked) exceptions
+- 🛠️ User-defined exceptions
+
+- **🧪 Techniques for Handling Exceptions**
+- try-catch block  
+- try-catch-finally block  
+- try-with-resources approach  
+- throws keyword  
+- throw statement  
+
+- **🧩 Custom Exception Creation**
+- Inheriting from the `Exception` class  
+- Creating default and parameterized constructors  
+
+---
+
+## 📆 26th January 2025
+
+- **🔍 Regular Expressions**
+- Regex fundamentals
+- Meta characters
+- Quantifiers
+
+- **🧠 Frequently Used Patterns**
+- 📧 Email format validation
+- 🔐 Strong password rules
+- 📱 Mobile number pattern
+
+- **⚙️ C# Regex Library**
+- Pattern definition
+- Matcher object
+
+- **🛠️ Commonly Used Methods**
+- find()
+- matches()
+- replaceAll()
+
+---
+
+- **🧪 NUnit Testing Framework**
+- 🏷️ NUnit attributes and annotations
+- ✍️ Writing automated test cases
+- 🧱 Structure of a test class
+- ✅ Assertion methods
