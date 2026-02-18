@@ -5,7 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 using CsvHelper;
 using System.Globalization;
+using Newtonsoft.Json;
 using System.IO;
+
 
 namespace AddressBookSystem
 {
@@ -306,13 +308,13 @@ namespace AddressBookSystem
                     Console.WriteLine("CSV file not found.\n");
                     return;
                 }
-        
+
                 using (var reader = new StreamReader("AddressBook.csv"))
                 using (var csv = new CsvReader(reader, CultureInfo.InvariantCulture))
                 {
                     contacts = csv.GetRecords<AddressBook>().ToList();
                 }
-        
+
                 Console.WriteLine("Address Book read from CSV file successfully.\n");
             }
             catch (Exception ex)
@@ -320,7 +322,42 @@ namespace AddressBookSystem
                 Console.WriteLine("Error reading CSV file: " + ex.Message);
             }
         }
+        public void WriteToJson()
+        {
+            try
+            {
+                string jsonData = JsonConvert.SerializeObject(contacts, Formatting.Indented);
+                File.WriteAllText("AddressBook.json", jsonData);
 
+                Console.WriteLine("Address Book written to JSON file successfully.\n");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error writing JSON file: " + ex.Message);
+            }
+        }
 
+        public void ReadFromJson()
+        {
+            try
+            {
+                if (!File.Exists("AddressBook.json"))
+                {
+                    Console.WriteLine("JSON file not found.\n");
+                    return;
+                }
+        
+                string jsonData = File.ReadAllText("AddressBook.json");
+                contacts = JsonConvert.DeserializeObject<List<AddressBook>>(jsonData)
+                           ?? new List<AddressBook>();
+        
+                Console.WriteLine("Address Book read from JSON file successfully.\n");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error reading JSON file: " + ex.Message);
+            }
+        }
+        
     }
 }

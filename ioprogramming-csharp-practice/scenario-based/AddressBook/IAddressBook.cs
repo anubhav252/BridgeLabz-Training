@@ -21,5 +21,8 @@ namespace AddressBookSystem
         void ReadFromFile();//for reading file
         void WriteToCsv();//for writing csv
         void ReadFromCsv();//for reading csv
+        void WriteToJson();
+        void ReadFromJson();
+
     }
 }

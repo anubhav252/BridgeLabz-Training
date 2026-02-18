@@ -83,7 +83,9 @@ namespace AddressBookSystem
                 Console.WriteLine("11. Read Address Book from File");
                 Console.WriteLine("13. Write Address Book to CSV");
                 Console.WriteLine("14. Read Address Book from CSV");
-                Console.WriteLine("15. Back");
+                Console.WriteLine("15. Write Address Book to JSON");
+                Console.WriteLine("16. Read Address Book from JSON");
+                Console.WriteLine("17. Back");
                 Console.Write("Enter choice: ");
                 Console.WriteLine("---------------------------------");
 
@@ -131,6 +133,13 @@ namespace AddressBookSystem
                         currentBook.ReadFromCsv();
                         break;
                     case 15:
+                        currentBook.WriteToJson();
+                        break;
+                    case 16:
+                        currentBook.ReadFromJson();
+                        break;
+
+                    case 17:
                         return;
                     default:
                         Console.WriteLine("Invalid choice! Enter again--");
