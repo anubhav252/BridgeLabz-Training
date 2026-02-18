@@ -76,7 +76,10 @@ namespace AddressBookSystem
                 Console.WriteLine("4. Delete Contact");
                 Console.WriteLine("5. Add Multiple Contact");
                 Console.WriteLine("6. Sort Contacts by Name");
-                Console.WriteLine("7. Back");
+                Console.WriteLine("7. Sort by City");
+                Console.WriteLine("8. Sort by State");
+                Console.WriteLine("9. Sort by Zip");
+                Console.WriteLine("10. Back");
                 Console.Write("Enter choice: ");
                 Console.WriteLine("---------------------------------");
 
@@ -103,6 +106,15 @@ namespace AddressBookSystem
                         currentBook.SortContacts();
                         break;
                     case 7:
+                        currentBook.SortByCity();
+                        break;
+                    case 8:
+                        currentBook.SortByState();
+                        break;
+                    case 9:
+                        currentBook.SortByZip();
+                        break;
+                    case 10:
                         return;
                     default:
                         Console.WriteLine("Invalid choice! Enter again--");

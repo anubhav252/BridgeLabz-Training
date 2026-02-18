@@ -166,5 +166,49 @@ namespace AddressBookSystem
             Console.WriteLine("\nContacts sorted alphabetically.\n");
             DisplayContacts();
         }
+        //methods for sorting contacts by city/state/zip
+        public void SortByCity()
+        {
+            if (contacts.Count < 2)
+            {
+                Console.WriteLine("Not enough contacts to sort.\n");
+                return;
+            }
+
+            contacts.Sort((a, b) =>
+                string.Compare(a._City, b._City, StringComparison.OrdinalIgnoreCase));
+
+            Console.WriteLine("\nContacts sorted by City:\n");
+            DisplayContacts();
+        }
+
+        public void SortByState()
+        {
+            if (contacts.Count < 2)
+            {
+                Console.WriteLine("Not enough contacts to sort.\n");
+                return;
+            }
+
+            contacts.Sort((a, b) =>
+                string.Compare(a._State, b._State, StringComparison.OrdinalIgnoreCase));
+
+            Console.WriteLine("\nContacts sorted by State:\n");
+            DisplayContacts();
+        }
+        public void SortByZip()
+        {
+            if (contacts.Count < 2)
+            {
+                Console.WriteLine("Not enough contacts to sort.\n");
+                return;
+            }
+
+            contacts.Sort((a, b) =>
+                string.Compare(a._Zip, b._Zip, StringComparison.OrdinalIgnoreCase));
+
+            Console.WriteLine("\nContacts sorted by Zip:\n");
+            DisplayContacts();
+        }
     }
 }

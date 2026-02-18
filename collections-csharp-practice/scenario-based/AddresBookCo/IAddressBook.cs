@@ -14,6 +14,8 @@ namespace AddressBookSystem
         void DeleteContact();// for deleting contact
         void AddMultipleContact();// for adding multiple contacts
         void SortContacts();// for sorting contacts
-
+        void SortByCity();//for sorting by city
+        void SortByState();// for sorting by state
+        void SortByZip();//for sorting by zip
     }
 }
