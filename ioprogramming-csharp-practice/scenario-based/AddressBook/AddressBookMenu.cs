@@ -81,7 +81,9 @@ namespace AddressBookSystem
                 Console.WriteLine("9. Sort by Zip");
                 Console.WriteLine("10. Write Address Book to File");
                 Console.WriteLine("11. Read Address Book from File");
-                Console.WriteLine("12. Back");
+                Console.WriteLine("13. Write Address Book to CSV");
+                Console.WriteLine("14. Read Address Book from CSV");
+                Console.WriteLine("15. Back");
                 Console.Write("Enter choice: ");
                 Console.WriteLine("---------------------------------");
 
@@ -122,7 +124,13 @@ namespace AddressBookSystem
                     case 11:
                         currentBook.ReadFromFile();
                         break;
-                    case 12:
+                    case 13:
+                        currentBook.WriteToCsv();
+                        break;
+                    case 14:
+                        currentBook.ReadFromCsv();
+                        break;
+                    case 15:
                         return;
                     default:
                         Console.WriteLine("Invalid choice! Enter again--");

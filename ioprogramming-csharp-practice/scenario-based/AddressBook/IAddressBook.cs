@@ -19,5 +19,7 @@ namespace AddressBookSystem
         void SortByZip();//for sorting by zip
         void WriteToFile();//for writing file
         void ReadFromFile();//for reading file
+        void WriteToCsv();//for writing csv
+        void ReadFromCsv();//for reading csv
     }
 }

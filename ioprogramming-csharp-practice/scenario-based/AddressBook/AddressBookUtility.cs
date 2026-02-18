@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using CsvHelper;
+using System.Globalization;
+using System.IO;
 
 namespace AddressBookSystem
 {
@@ -277,5 +280,47 @@ namespace AddressBookSystem
                 Console.WriteLine("Error reading file: " + ex.Message);
             }
         }
+        public void WriteToCsv()
+        {
+            try
+            {
+                using (var writer = new StreamWriter("AddressBook.csv"))
+                using (var csv = new CsvWriter(writer, CultureInfo.InvariantCulture))
+                {
+                    csv.WriteRecords(contacts);
+                }
+
+                Console.WriteLine("Address Book written to CSV file successfully.\n");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error writing CSV file: " + ex.Message);
+            }
+        }
+        public void ReadFromCsv()
+        {
+            try
+            {
+                if (!File.Exists("AddressBook.csv"))
+                {
+                    Console.WriteLine("CSV file not found.\n");
+                    return;
+                }
+        
+                using (var reader = new StreamReader("AddressBook.csv"))
+                using (var csv = new CsvReader(reader, CultureInfo.InvariantCulture))
+                {
+                    contacts = csv.GetRecords<AddressBook>().ToList();
+                }
+        
+                Console.WriteLine("Address Book read from CSV file successfully.\n");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error reading CSV file: " + ex.Message);
+            }
+        }
+
+
     }
 }
