@@ -1,13 +1,12 @@
-﻿using System;
+﻿using TechVilleSmartCity.Presentation;
 
-class TechvilleMain
+namespace TechVilleSmartCity
 {
-    static void Main()
+    class TechVilleMain
     {
-        ServiceEligibility eligibility = new ServiceEligibility();
-        eligibility.StartRegistration();
-
-        Console.WriteLine("\nPress any key to exit...");
-        Console.ReadKey();
+        static void Main()
+        {
+            ApplicationMenu.Show();
+        }
     }
 }
