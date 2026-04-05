@@ -1,0 +1,7 @@
+File handling in C# allows programs to store and retrieve data.
+This example demonstrates reading from one file
+and writing the same content into another file.
+
+FileStream is used for low-level file operations.
+Exception handling ensures safe execution.
+it write error at compile time
